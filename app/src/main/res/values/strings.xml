@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">App UI</string>
+    <string name="hint">Choose your file</string>
+    <string name="secure">100% Secure</string>
 </resources>

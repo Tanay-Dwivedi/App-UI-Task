@@ -7,6 +7,67 @@
     android:background="@drawable/background_image"
     tools:context=".MainActivity">
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/fileChoose"
+        app:layout_constraintEnd_toEndOf="@+id/fileChoose"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fileChoose"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/correct">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:id="@+id/secure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/secure"
+        android:textColor="#00C853"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/fileChoose"
+        app:layout_constraintStart_toEndOf="@+id/lottieAnimationView3">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/fileChoose"
+        android:layout_width="325dp"
+        android:layout_height="70dp"
+        android:background="@drawable/file_choose_box_style"
+        android:gravity="center"
+        android:text="@string/hint"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/menuItemsCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525">
+
+    </TextView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="10dp"
+        app:lottie_rawRes="@raw/file_clip_animation"
+        app:layout_constraintBottom_toBottomOf="@+id/fileChoose"
+        app:layout_constraintEnd_toEndOf="@+id/fileChoose"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fileChoose"
+        app:layout_constraintTop_toTopOf="@+id/fileChoose">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
     <androidx.cardview.widget.CardView
         android:id="@+id/menuItemsCard"
         android:layout_width="match_parent"
@@ -62,14 +123,14 @@
         android:layout_height="75dp"
         android:layout_margin="12dp"
         android:elevation="10dp"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/file_aimation"
         app:layout_constraintBottom_toBottomOf="@+id/menuItemsCard"
         app:layout_constraintEnd_toEndOf="@+id/menuItemsCard"
         app:layout_constraintHorizontal_bias="0.325"
         app:layout_constraintStart_toStartOf="@+id/menuItemsCard"
-        app:layout_constraintTop_toTopOf="@+id/menuItemsCard">
+        app:layout_constraintTop_toTopOf="@+id/menuItemsCard"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/file_aimation">
 
     </com.airbnb.lottie.LottieAnimationView>
 
@@ -79,14 +140,14 @@
         android:layout_height="75dp"
         android:layout_margin="12dp"
         android:elevation="10dp"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/recycle_bin_animation"
         app:layout_constraintBottom_toBottomOf="@+id/menuItemsCard"
         app:layout_constraintEnd_toEndOf="@+id/menuItemsCard"
         app:layout_constraintHorizontal_bias="0.675"
         app:layout_constraintStart_toStartOf="@+id/menuItemsCard"
-        app:layout_constraintTop_toTopOf="@+id/menuItemsCard">
+        app:layout_constraintTop_toTopOf="@+id/menuItemsCard"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/recycle_bin_animation">
 
     </com.airbnb.lottie.LottieAnimationView>
 
