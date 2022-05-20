@@ -4,8 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_image"
     tools:context=".MainActivity">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/menuItemsCard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="15dp"
+        android:alpha="0.5"
+        android:backgroundTint="#A1E3D8"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
+    </androidx.cardview.widget.CardView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/profile_anim"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="12dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuItemsCard"
+        app:layout_constraintEnd_toEndOf="@+id/menuItemsCard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/menuItemsCard"
+        app:layout_constraintTop_toTopOf="@+id/menuItemsCard"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/profile_pic_animation">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/logout_anim"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="12dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/menuItemsCard"
+        app:layout_constraintEnd_toEndOf="@+id/menuItemsCard"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/menuItemsCard"
+        app:layout_constraintTop_toTopOf="@+id/menuItemsCard"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/logout_animation">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/file_anim"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="12dp"
+        android:elevation="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/file_aimation"
+        app:layout_constraintBottom_toBottomOf="@+id/menuItemsCard"
+        app:layout_constraintEnd_toEndOf="@+id/menuItemsCard"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="@+id/menuItemsCard"
+        app:layout_constraintTop_toTopOf="@+id/menuItemsCard">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bin_anim"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="12dp"
+        android:elevation="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/recycle_bin_animation"
+        app:layout_constraintBottom_toBottomOf="@+id/menuItemsCard"
+        app:layout_constraintEnd_toEndOf="@+id/menuItemsCard"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toStartOf="@+id/menuItemsCard"
+        app:layout_constraintTop_toTopOf="@+id/menuItemsCard">
+
+    </com.airbnb.lottie.LottieAnimationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
